@@ -1,6 +1,6 @@
 -
   name: Install Git and Docker
-  hosts: ansible-node1
+  hosts: ansible-node
   tasks:
     - name: Git check
       yum:
