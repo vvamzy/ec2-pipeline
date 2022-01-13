@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('git checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/vvamzy/jenkins-ansible-pipeline.git'
+            }
+        }
+        stage('execute playbook') {
+            steps {
+                ansiblePlaybook credentialsId: 'ansible-node', disableHostKeyChecking: true, installation: 'Ansible', inventory: 'deploy.inv', playbook: 'example2.yml'
+            }
+        }
+    }
+}
+

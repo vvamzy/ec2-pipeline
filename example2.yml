@@ -1,0 +1,13 @@
+-
+  name: Install Git and Docker
+  hosts: ansible-node1
+  tasks:
+    - name: Git check
+      yum:
+        name: git
+        state: present
+
+    - name: Install Docker
+      yum:
+        name: docker
+        state: present
