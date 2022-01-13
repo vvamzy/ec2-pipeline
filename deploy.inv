@@ -1,5 +1,1 @@
-ansible-node
-ansible_host=ansible-node
-ansible_connection=ssh
-
-
+ansible-node ansible_ssh_host=15.206.92.35 ansible_ssh_private_key=/etc/ansible/remote.key
