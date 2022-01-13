@@ -1,6 +1,6 @@
 -
   name: Install Git and Docker
-  hosts: ansible-node
+  hosts: ip-172-31-39-241.ap-south-1.compute.internal
   tasks:
     - name: Git check
       yum:
